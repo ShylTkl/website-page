@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color:#35424A;
+    height: 64px;
+    width: 100%;
+    border-bottom: 3px solid #874C8E;
+    display: inline-flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1rem 1rem;
+
+}
+
+.nav-left{
+    display:inline-flex;
+    align-items: center;
+    justify-content:space-between;
+    /* flex-wrap: wrap; */
+    font-size:24px;
+    gap: 6px;
+
+}
+
+.nav-right {
+    display: inline-flex;
+    justify-items: center;
+    justify-content:space-between;
+    /* flex-wrap: wrap; */
+    flex-grow: 0.1;
+    padding: 0 1rem;
+    font-size: 12px;
+}    
+
+.span-left{
+    color: white;
+}
+
+.cla{
+    color:#874C8E;
+
+}
+
+a{
+    color: white;
+}
+
+.servis{
+    color:#874C8E;
+    font-size: 16px;
+}
+
+.sub-send{
+    display:flex;
+    position: relative;
+    background-color:#35424A ;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.sub-text{
+    font-size: 18px;
+    color: white;
+    padding: 0 0 0 1rem;
+}
+
+.mail-btn{
+    padding: 0 8px;
+}
+
+.email{
+    font-size: 13px;
+    height: 30px; 
+    width: 250px;
+    color: rgb(151, 151, 151);
+}
+
+.reset{
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 11px;
+    height: 29px;
+    width: 66px;
+    cursor: pointer;
+}
+
+
+main{
+    display: flex;
+}
+
+.left-sec{
+    background-color:#E6E6E6;
+    padding-top: 10px;
+    margin: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.aciklama{
+    padding-top: 10px;
+}
+
+.ucret{
+    padding-top: 10px;
+
+}
+
+.iç-span{
+    padding-bottom:50px;
+}
+
+.servis-left{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    margin: 30px;
+    height: 365px;
+    width:1000px;
+}
+
+.servis-right{
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    margin: 30px;
+    margin-top: 43px;
+    height: 365px;
+    width:400px;
+    background-color: #35424A;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+
+.sag{
+    padding-top: 20px;
+}
+
+input{
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#mesaj{
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+button{
+    background-color: red;
+    border: none;
+    color: white;
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color:#35424A;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    height: 96px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-yazi{
+    height: 19px;
+    padding-top: 10px;
+    padding-bottom:20px ;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    outline: none;
+    padding: .5rem;
+}
+
+
+
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #35424A;
+    transition: 1s;
+ }
+
+ .logo-header{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+ }
+
+ .logo{
+    position:relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+
+ }
+
+ .logo.active{
+    bottom: 0;
+    opacity: 1;
+    transition:ease-in-out 0.5s;
+
+
+ }
+
+ .logo.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition:ease-in-out 0.5s;
+ }
